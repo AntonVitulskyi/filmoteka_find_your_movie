@@ -4,8 +4,8 @@
   "description": "",
   "homepage": "https://AntonVitulskyi.github.io/filmoteka_find_your_movie",
   "scripts": {
-    "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /filmoteka_find_your_movie/"
+    "start": "parcel src/*index.html",
+    "build": "parcel build src/*index.html --public-url /filmoteka_find_your_movie/"
   },
   "repository": {
     "type": "git",
