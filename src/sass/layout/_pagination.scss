@@ -1,0 +1,68 @@
+#pagination {
+  width: 280px;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 374px;
+  }
+}
+
+.tui-page-btn,
+.tui-first,
+.tui-last {
+  display: flex;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(16 / 12);
+  border-radius: 5px;
+  color: $dark-color;
+  transition: all 250ms ease-in-out;
+  &:hover {
+    background: $press-color;
+  }
+}
+.tui-is-selected {
+  color: $dark-color;
+  background: $press-color;
+  border-color: $press-color;
+}
+
+.tui-pagination .tui-ico-ellip {
+  width: 16px;
+  height: 16px;
+  fill: $press-color;
+  transition: all 250ms ease-in-out;
+}
+.tui-prev-is-ellip,
+.tui-next-is-ellip {
+  display: none;
+  @media screen and (min-width: $tablet-width) {
+    display: flex;
+  }
+}
+
+.tui-first,
+.tui-last {
+  display: none;
+}
+
+.tui-prev {
+  transform: rotate(180deg);
+  background-image: url(../images/pagination-icons/arrow-right.svg);
+}
+
+.tui-prev,
+.tui-next .tui-first,
+.tui-last {
+  background: $footer-bg-color;
+}
